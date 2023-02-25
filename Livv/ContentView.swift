@@ -8,28 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var page: Pages
-    
     var body: some View {
-        VStack {
-            switch(page) {
-            case Pages.HOME:
-                HomeView()
-            }
+        TabView {
+            CalendarView()
+                .tabItem{
+                    Text("Calendar")
+                }
+            InventoryView()
+                .tabItem{
+                    Text("Inventory")
+                }
+            HomeView()
+                .tabItem{
+//                    Image(systemName: "HomeIcon")
+                    Text("Home")
+                }
+            ChoreView()
+                .tabItem{
+                    Text("Chores")
+                }
+            ExpensesView()
+                .tabItem{
+                    Text("Expenses")
+                }
             
-            HStack(alignment: VerticalAlignment.bottom) {
-                
-            }
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(page: Pages.HOME)
+        ContentView()
     }
 }
 
 enum Pages {
-case HOME
+    case HOME, INVENTORY
 }

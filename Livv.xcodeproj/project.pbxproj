@@ -18,6 +18,10 @@
 		502D389A29AA7B6A00B14C5B /* LivvUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D389929AA7B6A00B14C5B /* LivvUITestsLaunchTests.swift */; };
 		502D38A729AA804500B14C5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D38A629AA804500B14C5B /* ContentView.swift */; };
 		502D38AB29AA81A800B14C5B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D38AA29AA81A800B14C5B /* HomeView.swift */; };
+		502D38AD29AA846500B14C5B /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D38AC29AA846500B14C5B /* InventoryView.swift */; };
+		502D38AF29AA851900B14C5B /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D38AE29AA851900B14C5B /* ExpensesView.swift */; };
+		502D38B129AA852A00B14C5B /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D38B029AA852A00B14C5B /* CalendarView.swift */; };
+		502D38B329AA853300B14C5B /* ChoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D38B229AA853300B14C5B /* ChoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		502D389929AA7B6A00B14C5B /* LivvUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		502D38A629AA804500B14C5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		502D38AA29AA81A800B14C5B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		502D38AC29AA846500B14C5B /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		502D38AE29AA851900B14C5B /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
+		502D38B029AA852A00B14C5B /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		502D38B229AA853300B14C5B /* ChoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,10 @@
 				502D387D29AA7B6900B14C5B /* Preview Content */,
 				502D38AA29AA81A800B14C5B /* HomeView.swift */,
 				502D387929AA7B6800B14C5B /* ContentView_example.swift */,
+				502D38AC29AA846500B14C5B /* InventoryView.swift */,
+				502D38AE29AA851900B14C5B /* ExpensesView.swift */,
+				502D38B029AA852A00B14C5B /* CalendarView.swift */,
+				502D38B229AA853300B14C5B /* ChoreView.swift */,
 			);
 			path = Livv;
 			sourceTree = "<group>";
@@ -269,10 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502D38B329AA853300B14C5B /* ChoreView.swift in Sources */,
 				502D388129AA7B6900B14C5B /* Persistence.swift in Sources */,
 				502D38A729AA804500B14C5B /* ContentView.swift in Sources */,
 				502D387A29AA7B6800B14C5B /* ContentView_example.swift in Sources */,
+				502D38AF29AA851900B14C5B /* ExpensesView.swift in Sources */,
 				502D38AB29AA81A800B14C5B /* HomeView.swift in Sources */,
+				502D38B129AA852A00B14C5B /* CalendarView.swift in Sources */,
+				502D38AD29AA846500B14C5B /* InventoryView.swift in Sources */,
 				502D388429AA7B6900B14C5B /* Livv.xcdatamodeld in Sources */,
 				502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */,
 			);

@@ -9,12 +9,18 @@ import SwiftUI
 
 @main
 struct LivvApp: App {
-    let persistenceController = PersistenceController.shared
-
+//    let persistenceController = PersistenceController.shared
+//
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView_example()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//        }
+//    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView_example()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ContentView()
         }
     }
 }
