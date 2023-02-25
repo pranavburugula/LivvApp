@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387729AA7B6800B14C5B /* LivvApp.swift */; };
-		502D387A29AA7B6800B14C5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387929AA7B6800B14C5B /* ContentView.swift */; };
+		502D387A29AA7B6800B14C5B /* ContentView_example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387929AA7B6800B14C5B /* ContentView_example.swift */; };
 		502D387C29AA7B6900B14C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502D387B29AA7B6900B14C5B /* Assets.xcassets */; };
 		502D387F29AA7B6900B14C5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502D387E29AA7B6900B14C5B /* Preview Assets.xcassets */; };
 		502D388129AA7B6900B14C5B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D388029AA7B6900B14C5B /* Persistence.swift */; };
@@ -16,6 +16,8 @@
 		502D388E29AA7B6A00B14C5B /* LivvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D388D29AA7B6A00B14C5B /* LivvTests.swift */; };
 		502D389829AA7B6A00B14C5B /* LivvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D389729AA7B6A00B14C5B /* LivvUITests.swift */; };
 		502D389A29AA7B6A00B14C5B /* LivvUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D389929AA7B6A00B14C5B /* LivvUITestsLaunchTests.swift */; };
+		502D38A729AA804500B14C5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D38A629AA804500B14C5B /* ContentView.swift */; };
+		502D38AB29AA81A800B14C5B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D38AA29AA81A800B14C5B /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 /* Begin PBXFileReference section */
 		502D387429AA7B6800B14C5B /* Livv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		502D387729AA7B6800B14C5B /* LivvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvApp.swift; sourceTree = "<group>"; };
-		502D387929AA7B6800B14C5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		502D387929AA7B6800B14C5B /* ContentView_example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_example.swift; sourceTree = "<group>"; };
 		502D387B29AA7B6900B14C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		502D387E29AA7B6900B14C5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		502D388029AA7B6900B14C5B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		502D389329AA7B6A00B14C5B /* LivvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivvUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		502D389729AA7B6A00B14C5B /* LivvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvUITests.swift; sourceTree = "<group>"; };
 		502D389929AA7B6A00B14C5B /* LivvUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		502D38A629AA804500B14C5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		502D38AA29AA81A800B14C5B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +103,13 @@
 			isa = PBXGroup;
 			children = (
 				502D387729AA7B6800B14C5B /* LivvApp.swift */,
-				502D387929AA7B6800B14C5B /* ContentView.swift */,
+				502D38A629AA804500B14C5B /* ContentView.swift */,
 				502D387B29AA7B6900B14C5B /* Assets.xcassets */,
 				502D388029AA7B6900B14C5B /* Persistence.swift */,
 				502D388229AA7B6900B14C5B /* Livv.xcdatamodeld */,
 				502D387D29AA7B6900B14C5B /* Preview Content */,
+				502D38AA29AA81A800B14C5B /* HomeView.swift */,
+				502D387929AA7B6800B14C5B /* ContentView_example.swift */,
 			);
 			path = Livv;
 			sourceTree = "<group>";
@@ -264,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				502D388129AA7B6900B14C5B /* Persistence.swift in Sources */,
-				502D387A29AA7B6800B14C5B /* ContentView.swift in Sources */,
+				502D38A729AA804500B14C5B /* ContentView.swift in Sources */,
+				502D387A29AA7B6800B14C5B /* ContentView_example.swift in Sources */,
+				502D38AB29AA81A800B14C5B /* HomeView.swift in Sources */,
 				502D388429AA7B6900B14C5B /* Livv.xcdatamodeld in Sources */,
 				502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */,
 			);

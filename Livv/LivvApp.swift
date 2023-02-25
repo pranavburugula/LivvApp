@@ -13,7 +13,7 @@ struct LivvApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView_example()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
