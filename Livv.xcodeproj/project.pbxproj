@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387729AA7B6800B14C5B /* LivvApp.swift */; };
+		502D387A29AA7B6800B14C5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387929AA7B6800B14C5B /* ContentView.swift */; };
+		502D387C29AA7B6900B14C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502D387B29AA7B6900B14C5B /* Assets.xcassets */; };
+		502D387F29AA7B6900B14C5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502D387E29AA7B6900B14C5B /* Preview Assets.xcassets */; };
+		502D388129AA7B6900B14C5B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D388029AA7B6900B14C5B /* Persistence.swift */; };
+		502D388429AA7B6900B14C5B /* Livv.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 502D388229AA7B6900B14C5B /* Livv.xcdatamodeld */; };
+		502D388E29AA7B6A00B14C5B /* LivvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D388D29AA7B6A00B14C5B /* LivvTests.swift */; };
+		502D389829AA7B6A00B14C5B /* LivvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D389729AA7B6A00B14C5B /* LivvUITests.swift */; };
+		502D389A29AA7B6A00B14C5B /* LivvUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D389929AA7B6A00B14C5B /* LivvUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		502D388A29AA7B6A00B14C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 502D386C29AA7B6800B14C5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 502D387329AA7B6800B14C5B;
+			remoteInfo = Livv;
+		};
+		502D389429AA7B6A00B14C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 502D386C29AA7B6800B14C5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 502D387329AA7B6800B14C5B;
+			remoteInfo = Livv;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		502D387429AA7B6800B14C5B /* Livv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		502D387729AA7B6800B14C5B /* LivvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvApp.swift; sourceTree = "<group>"; };
+		502D387929AA7B6800B14C5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		502D387B29AA7B6900B14C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		502D387E29AA7B6900B14C5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		502D388029AA7B6900B14C5B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		502D388329AA7B6900B14C5B /* Livv.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Livv.xcdatamodel; sourceTree = "<group>"; };
+		502D388929AA7B6A00B14C5B /* LivvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		502D388D29AA7B6A00B14C5B /* LivvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvTests.swift; sourceTree = "<group>"; };
+		502D389329AA7B6A00B14C5B /* LivvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivvUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		502D389729AA7B6A00B14C5B /* LivvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvUITests.swift; sourceTree = "<group>"; };
+		502D389929AA7B6A00B14C5B /* LivvUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		502D387129AA7B6800B14C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502D388629AA7B6A00B14C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502D389029AA7B6A00B14C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		502D386B29AA7B6800B14C5B = {
+			isa = PBXGroup;
+			children = (
+				502D387629AA7B6800B14C5B /* Livv */,
+				502D388C29AA7B6A00B14C5B /* LivvTests */,
+				502D389629AA7B6A00B14C5B /* LivvUITests */,
+				502D387529AA7B6800B14C5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		502D387529AA7B6800B14C5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				502D387429AA7B6800B14C5B /* Livv.app */,
+				502D388929AA7B6A00B14C5B /* LivvTests.xctest */,
+				502D389329AA7B6A00B14C5B /* LivvUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		502D387629AA7B6800B14C5B /* Livv */ = {
+			isa = PBXGroup;
+			children = (
+				502D387729AA7B6800B14C5B /* LivvApp.swift */,
+				502D387929AA7B6800B14C5B /* ContentView.swift */,
+				502D387B29AA7B6900B14C5B /* Assets.xcassets */,
+				502D388029AA7B6900B14C5B /* Persistence.swift */,
+				502D388229AA7B6900B14C5B /* Livv.xcdatamodeld */,
+				502D387D29AA7B6900B14C5B /* Preview Content */,
+			);
+			path = Livv;
+			sourceTree = "<group>";
+		};
+		502D387D29AA7B6900B14C5B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				502D387E29AA7B6900B14C5B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		502D388C29AA7B6A00B14C5B /* LivvTests */ = {
+			isa = PBXGroup;
+			children = (
+				502D388D29AA7B6A00B14C5B /* LivvTests.swift */,
+			);
+			path = LivvTests;
+			sourceTree = "<group>";
+		};
+		502D389629AA7B6A00B14C5B /* LivvUITests */ = {
+			isa = PBXGroup;
+			children = (
+				502D389729AA7B6A00B14C5B /* LivvUITests.swift */,
+				502D389929AA7B6A00B14C5B /* LivvUITestsLaunchTests.swift */,
+			);
+			path = LivvUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		502D387329AA7B6800B14C5B /* Livv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502D389D29AA7B6A00B14C5B /* Build configuration list for PBXNativeTarget "Livv" */;
+			buildPhases = (
+				502D387029AA7B6800B14C5B /* Sources */,
+				502D387129AA7B6800B14C5B /* Frameworks */,
+				502D387229AA7B6800B14C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Livv;
+			productName = Livv;
+			productReference = 502D387429AA7B6800B14C5B /* Livv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		502D388829AA7B6A00B14C5B /* LivvTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502D38A029AA7B6A00B14C5B /* Build configuration list for PBXNativeTarget "LivvTests" */;
+			buildPhases = (
+				502D388529AA7B6A00B14C5B /* Sources */,
+				502D388629AA7B6A00B14C5B /* Frameworks */,
+				502D388729AA7B6A00B14C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				502D388B29AA7B6A00B14C5B /* PBXTargetDependency */,
+			);
+			name = LivvTests;
+			productName = LivvTests;
+			productReference = 502D388929AA7B6A00B14C5B /* LivvTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		502D389229AA7B6A00B14C5B /* LivvUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502D38A329AA7B6A00B14C5B /* Build configuration list for PBXNativeTarget "LivvUITests" */;
+			buildPhases = (
+				502D388F29AA7B6A00B14C5B /* Sources */,
+				502D389029AA7B6A00B14C5B /* Frameworks */,
+				502D389129AA7B6A00B14C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				502D389529AA7B6A00B14C5B /* PBXTargetDependency */,
+			);
+			name = LivvUITests;
+			productName = LivvUITests;
+			productReference = 502D389329AA7B6A00B14C5B /* LivvUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		502D386C29AA7B6800B14C5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					502D387329AA7B6800B14C5B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					502D388829AA7B6A00B14C5B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 502D387329AA7B6800B14C5B;
+					};
+					502D389229AA7B6A00B14C5B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 502D387329AA7B6800B14C5B;
+					};
+				};
+			};
+			buildConfigurationList = 502D386F29AA7B6800B14C5B /* Build configuration list for PBXProject "Livv" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 502D386B29AA7B6800B14C5B;
+			productRefGroup = 502D387529AA7B6800B14C5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				502D387329AA7B6800B14C5B /* Livv */,
+				502D388829AA7B6A00B14C5B /* LivvTests */,
+				502D389229AA7B6A00B14C5B /* LivvUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		502D387229AA7B6800B14C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502D387F29AA7B6900B14C5B /* Preview Assets.xcassets in Resources */,
+				502D387C29AA7B6900B14C5B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502D388729AA7B6A00B14C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502D389129AA7B6A00B14C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		502D387029AA7B6800B14C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502D388129AA7B6900B14C5B /* Persistence.swift in Sources */,
+				502D387A29AA7B6800B14C5B /* ContentView.swift in Sources */,
+				502D388429AA7B6900B14C5B /* Livv.xcdatamodeld in Sources */,
+				502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502D388529AA7B6A00B14C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502D388E29AA7B6A00B14C5B /* LivvTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502D388F29AA7B6A00B14C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502D389829AA7B6A00B14C5B /* LivvUITests.swift in Sources */,
+				502D389A29AA7B6A00B14C5B /* LivvUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		502D388B29AA7B6A00B14C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 502D387329AA7B6800B14C5B /* Livv */;
+			targetProxy = 502D388A29AA7B6A00B14C5B /* PBXContainerItemProxy */;
+		};
+		502D389529AA7B6A00B14C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 502D387329AA7B6800B14C5B /* Livv */;
+			targetProxy = 502D389429AA7B6A00B14C5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		502D389B29AA7B6A00B14C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		502D389C29AA7B6A00B14C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		502D389E29AA7B6A00B14C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Livv/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideproject.Livv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		502D389F29AA7B6A00B14C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Livv/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideproject.Livv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		502D38A129AA7B6A00B14C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideproject.LivvTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Livv.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Livv";
+			};
+			name = Debug;
+		};
+		502D38A229AA7B6A00B14C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideproject.LivvTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Livv.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Livv";
+			};
+			name = Release;
+		};
+		502D38A429AA7B6A00B14C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideproject.LivvUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Livv;
+			};
+			name = Debug;
+		};
+		502D38A529AA7B6A00B14C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideproject.LivvUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Livv;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		502D386F29AA7B6800B14C5B /* Build configuration list for PBXProject "Livv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502D389B29AA7B6A00B14C5B /* Debug */,
+				502D389C29AA7B6A00B14C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		502D389D29AA7B6A00B14C5B /* Build configuration list for PBXNativeTarget "Livv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502D389E29AA7B6A00B14C5B /* Debug */,
+				502D389F29AA7B6A00B14C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		502D38A029AA7B6A00B14C5B /* Build configuration list for PBXNativeTarget "LivvTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502D38A129AA7B6A00B14C5B /* Debug */,
+				502D38A229AA7B6A00B14C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		502D38A329AA7B6A00B14C5B /* Build configuration list for PBXNativeTarget "LivvUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502D38A429AA7B6A00B14C5B /* Debug */,
+				502D38A529AA7B6A00B14C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		502D388229AA7B6900B14C5B /* Livv.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				502D388329AA7B6900B14C5B /* Livv.xcdatamodel */,
+			);
+			currentVersion = 502D388329AA7B6900B14C5B /* Livv.xcdatamodel */;
+			path = Livv.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 502D386C29AA7B6800B14C5B /* Project object */;
+}
