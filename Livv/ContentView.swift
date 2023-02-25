@@ -12,24 +12,23 @@ struct ContentView: View {
         TabView {
             CalendarView()
                 .tabItem{
-                    Text("Calendar")
+                    Image(systemName: "calendar")
                 }
             InventoryView()
                 .tabItem{
-                    Text("Inventory")
+                    Image(systemName: "refrigerator")
                 }
             HomeView()
                 .tabItem{
-//                    Image(systemName: "HomeIcon")
-                    Text("Home")
+                    Image(systemName: "house")
                 }
             ChoreView()
                 .tabItem{
-                    Text("Chores")
+                    Image(systemName: "checklist")
                 }
             ExpensesView()
                 .tabItem{
-                    Text("Expenses")
+                    Image(systemName: "dollarsign")
                 }
             
         }
