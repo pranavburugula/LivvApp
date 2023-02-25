@@ -110,13 +110,13 @@
 		502D387629AA7B6800B14C5B /* Livv */ = {
 			isa = PBXGroup;
 			children = (
+				502D38B429AABA9400B14C5B /* HomeScreen */,
 				502D387729AA7B6800B14C5B /* LivvApp.swift */,
 				502D38A629AA804500B14C5B /* ContentView.swift */,
 				502D387B29AA7B6900B14C5B /* Assets.xcassets */,
 				502D388029AA7B6900B14C5B /* Persistence.swift */,
 				502D388229AA7B6900B14C5B /* Livv.xcdatamodeld */,
 				502D387D29AA7B6900B14C5B /* Preview Content */,
-				502D38AA29AA81A800B14C5B /* HomeView.swift */,
 				502D387929AA7B6800B14C5B /* ContentView_example.swift */,
 				502D38AC29AA846500B14C5B /* InventoryView.swift */,
 				502D38AE29AA851900B14C5B /* ExpensesView.swift */,
@@ -149,6 +149,14 @@
 				502D389929AA7B6A00B14C5B /* LivvUITestsLaunchTests.swift */,
 			);
 			path = LivvUITests;
+			sourceTree = "<group>";
+		};
+		502D38B429AABA9400B14C5B /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				502D38AA29AA81A800B14C5B /* HomeView.swift */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

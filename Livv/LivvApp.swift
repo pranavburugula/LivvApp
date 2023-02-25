@@ -20,7 +20,7 @@ struct LivvApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(curGroupName: "My Home", allGroupNames: GroupName.sample)
         }
     }
 }

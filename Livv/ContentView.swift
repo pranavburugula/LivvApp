@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var curGroupName: String
+    let allGroupNames: [GroupName]
+    
     var body: some View {
         TabView {
             CalendarView()
@@ -18,7 +21,7 @@ struct ContentView: View {
                 .tabItem{
                     Image(systemName: "refrigerator")
                 }
-            HomeView()
+            HomeView(curGroupName: curGroupName, allGroupNames: allGroupNames)
                 .tabItem{
                     Image(systemName: "house")
                 }
@@ -37,7 +40,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(curGroupName: "My Home", allGroupNames: GroupName.sample)
     }
 }
 
