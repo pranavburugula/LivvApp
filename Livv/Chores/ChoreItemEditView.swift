@@ -10,7 +10,7 @@ import SwiftUI
 struct ChoreItemEditView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var choreItem: ChoreItem
-    let testUsers = ["User 1", "User 2", "User 3"]
+    private let testUsers = ["User 1", "User 2", "User 3"]
     
     var body: some View {
         NavigationView {
@@ -23,11 +23,11 @@ struct ChoreItemEditView: View {
                     TextField(choreItem.description, text: $choreItem.description)
                 }
                 
-                Section(header: Text("Deadline:")) {
+                Section(header: Text("Deadline")) {
                     DatePicker("", selection: $choreItem.deadline, displayedComponents: [.date])
                 }
                 
-                Section(header: Text("Assignee:")) {
+                Section(header: Text("Assignee")) {
                     Picker("", selection: $choreItem.assignee) {
                         ForEach(testUsers, id: \.self) { testUser in
                             Text(testUser)
@@ -40,7 +40,7 @@ struct ChoreItemEditView: View {
                 }
                 
                 if choreItem.repeating {
-                    Section(header: Text("Number of days until chore repeats:")) {
+                    Section(header: Text("Number of days until chore repeats")) {
                         TextField(choreItem.repeatFrequency.formatted(), value:
                                     $choreItem.repeatFrequency, formatter: NumberFormatter())
                     }
@@ -65,7 +65,6 @@ struct ChoreItemEditView: View {
     }
     
 }
-
 
 struct ChoreItemEditView_Previews: PreviewProvider {
     static var previews: some View {
