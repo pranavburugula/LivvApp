@@ -11,6 +11,8 @@
 		2C0704CE29AABB9000BDE7F0 /* ChoreItemEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0704CD29AABB9000BDE7F0 /* ChoreItemEditView.swift */; };
 		2C0704D229AB644900BDE7F0 /* ExpenseItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0704D129AB644900BDE7F0 /* ExpenseItemView.swift */; };
 		2C0704D429AB6B4A00BDE7F0 /* ExpenseItemEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0704D329AB6B4A00BDE7F0 /* ExpenseItemEditView.swift */; };
+		2C0704D829AB95A900BDE7F0 /* ExpenseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0704D729AB95A900BDE7F0 /* ExpenseUtils.swift */; };
+		2C0704DA29ABA0E300BDE7F0 /* ChoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0704D929ABA0E300BDE7F0 /* ChoreUtils.swift */; };
 		502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387729AA7B6800B14C5B /* LivvApp.swift */; };
 		502D387A29AA7B6800B14C5B /* ContentView_example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387929AA7B6800B14C5B /* ContentView_example.swift */; };
 		502D387C29AA7B6900B14C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502D387B29AA7B6900B14C5B /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		2C0704CD29AABB9000BDE7F0 /* ChoreItemEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreItemEditView.swift; sourceTree = "<group>"; };
 		2C0704D129AB644900BDE7F0 /* ExpenseItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItemView.swift; sourceTree = "<group>"; };
 		2C0704D329AB6B4A00BDE7F0 /* ExpenseItemEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItemEditView.swift; sourceTree = "<group>"; };
+		2C0704D729AB95A900BDE7F0 /* ExpenseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseUtils.swift; sourceTree = "<group>"; };
+		2C0704D929ABA0E300BDE7F0 /* ChoreUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreUtils.swift; sourceTree = "<group>"; };
 		502D387429AA7B6800B14C5B /* Livv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		502D387729AA7B6800B14C5B /* LivvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvApp.swift; sourceTree = "<group>"; };
 		502D387929AA7B6800B14C5B /* ContentView_example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_example.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 				502D38B229AA853300B14C5B /* ChoresView.swift */,
 				2C0704C929AA8B9A00BDE7F0 /* ChoreItemView.swift */,
 				2C0704CD29AABB9000BDE7F0 /* ChoreItemEditView.swift */,
+				2C0704D929ABA0E300BDE7F0 /* ChoreUtils.swift */,
 			);
 			path = Chores;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 				502D38AE29AA851900B14C5B /* ExpensesView.swift */,
 				2C0704D129AB644900BDE7F0 /* ExpenseItemView.swift */,
 				2C0704D329AB6B4A00BDE7F0 /* ExpenseItemEditView.swift */,
+				2C0704D729AB95A900BDE7F0 /* ExpenseUtils.swift */,
 			);
 			path = Expenses;
 			sourceTree = "<group>";
@@ -316,11 +322,13 @@
 				502D387A29AA7B6800B14C5B /* ContentView_example.swift in Sources */,
 				2C0704D229AB644900BDE7F0 /* ExpenseItemView.swift in Sources */,
 				502D38AF29AA851900B14C5B /* ExpensesView.swift in Sources */,
+				2C0704D829AB95A900BDE7F0 /* ExpenseUtils.swift in Sources */,
 				502D38AB29AA81A800B14C5B /* HomeView.swift in Sources */,
 				2C0704CE29AABB9000BDE7F0 /* ChoreItemEditView.swift in Sources */,
 				502D38B129AA852A00B14C5B /* CalendarView.swift in Sources */,
 				502D38AD29AA846500B14C5B /* InventoryView.swift in Sources */,
 				502D388429AA7B6900B14C5B /* Livv.xcdatamodeld in Sources */,
+				2C0704DA29ABA0E300BDE7F0 /* ChoreUtils.swift in Sources */,
 				2C0704D429AB6B4A00BDE7F0 /* ExpenseItemEditView.swift in Sources */,
 				502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */,
 			);

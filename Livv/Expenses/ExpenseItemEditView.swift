@@ -24,7 +24,7 @@ struct ExpenseItemEditView: View {
                 
                 Section(header: Text("Cost")) {
                     TextField(expenseItem.cost.formatted(), value:
-                                $expenseItem.cost, formatter: NumberFormatter())
+                                $expenseItem.cost, format: .number)
                 }
             }
             .navigationTitle("Edit Expense")
