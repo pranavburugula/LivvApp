@@ -8,32 +8,30 @@
 import Foundation
 
 struct InventoryModel {
-    let spaces: [InventorySpace]
+    let spaces: [InventoryLocation]
     
 }
 
-struct InventorySpace: Identifiable {
+struct InventoryLocation: Identifiable {
     let id = UUID()
     var name: String
     var items: [InventoryItem]
 }
 
-extension InventorySpace {
-    static var samples: [InventorySpace] {
-        [InventorySpace(name: "Fridge", items: InventoryItem.fridgeSamples),
-         InventorySpace(name: "Under Sink", items: InventoryItem.sinkSamples)]
+extension InventoryLocation {
+    static var samples: [InventoryLocation] {
+        [InventoryLocation(name: "Fridge", items: InventoryItem.fridgeSamples),
+         InventoryLocation(name: "Under Sink", items: InventoryItem.sinkSamples)]
     }
 }
 
 class InventoryItem: Identifiable {
     let id = UUID()
     var name: String
-    var quantity: Int
     var status: InventoryStatus
     
-    init(name: String, quantity: Int, status: InventoryStatus) {
+    init(name: String, status: InventoryStatus) {
         self.name = name
-        self.quantity = quantity
         self.status = status
     }
     
@@ -48,14 +46,14 @@ enum InventoryStatus {
 
 extension InventoryItem {
     static var fridgeSamples: [InventoryItem] {
-        [InventoryItem(name: "Milk", quantity: 1, status: InventoryStatus.LOW),
-         InventoryItem(name: "Tomatoes", quantity: 3, status: InventoryStatus.STOCKED),
-         InventoryItem(name: "Eggs", quantity: 12, status: InventoryStatus.OUT)]
+        [InventoryItem(name: "Milk", status: InventoryStatus.LOW),
+         InventoryItem(name: "Tomatoes", status: InventoryStatus.STOCKED),
+         InventoryItem(name: "Eggs", status: InventoryStatus.OUT)]
     }
     
     static var sinkSamples: [InventoryItem] {
-        [InventoryItem(name: "Dish Soap", quantity: 1, status: InventoryStatus.LOW),
-         InventoryItem(name: "Surface Cleaner", quantity: 1, status: InventoryStatus.STOCKED),
-         InventoryItem(name: "Paper Towels", quantity: 8, status: InventoryStatus.OUT)]
+        [InventoryItem(name: "Dish Soap", status: InventoryStatus.LOW),
+         InventoryItem(name: "Surface Cleaner", status: InventoryStatus.STOCKED),
+         InventoryItem(name: "Paper Towels", status: InventoryStatus.OUT)]
     }
 }

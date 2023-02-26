@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		501232B629AAC6FE00DA3477 /* InventoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501232B529AAC6FE00DA3477 /* InventoryModel.swift */; };
+		501232BA29AADA7900DA3477 /* InventoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501232B929AADA7900DA3477 /* InventoryListView.swift */; };
+		501232BC29AAE2B600DA3477 /* InventoryAddItemForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501232BB29AAE2B600DA3477 /* InventoryAddItemForm.swift */; };
+		501232BE29AAE2E500DA3477 /* InventoryAddLocationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501232BD29AAE2E500DA3477 /* InventoryAddLocationForm.swift */; };
 		502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387729AA7B6800B14C5B /* LivvApp.swift */; };
 		502D387A29AA7B6800B14C5B /* ContentView_example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387929AA7B6800B14C5B /* ContentView_example.swift */; };
 		502D387C29AA7B6900B14C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502D387B29AA7B6900B14C5B /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		501232B529AAC6FE00DA3477 /* InventoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryModel.swift; sourceTree = "<group>"; };
+		501232B929AADA7900DA3477 /* InventoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListView.swift; sourceTree = "<group>"; };
+		501232BB29AAE2B600DA3477 /* InventoryAddItemForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryAddItemForm.swift; sourceTree = "<group>"; };
+		501232BD29AAE2E500DA3477 /* InventoryAddLocationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryAddLocationForm.swift; sourceTree = "<group>"; };
 		502D387429AA7B6800B14C5B /* Livv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		502D387729AA7B6800B14C5B /* LivvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvApp.swift; sourceTree = "<group>"; };
 		502D387929AA7B6800B14C5B /* ContentView_example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_example.swift; sourceTree = "<group>"; };
@@ -94,6 +100,9 @@
 			children = (
 				502D38AC29AA846500B14C5B /* InventoryView.swift */,
 				501232B529AAC6FE00DA3477 /* InventoryModel.swift */,
+				501232B929AADA7900DA3477 /* InventoryListView.swift */,
+				501232BB29AAE2B600DA3477 /* InventoryAddItemForm.swift */,
+				501232BD29AAE2E500DA3477 /* InventoryAddLocationForm.swift */,
 			);
 			path = Inventory;
 			sourceTree = "<group>";
@@ -299,9 +308,12 @@
 				502D38AF29AA851900B14C5B /* ExpensesView.swift in Sources */,
 				502D38AB29AA81A800B14C5B /* HomeView.swift in Sources */,
 				502D38B129AA852A00B14C5B /* CalendarView.swift in Sources */,
+				501232BE29AAE2E500DA3477 /* InventoryAddLocationForm.swift in Sources */,
+				501232BA29AADA7900DA3477 /* InventoryListView.swift in Sources */,
 				501232B629AAC6FE00DA3477 /* InventoryModel.swift in Sources */,
 				502D38AD29AA846500B14C5B /* InventoryView.swift in Sources */,
 				502D388429AA7B6900B14C5B /* Livv.xcdatamodeld in Sources */,
+				501232BC29AAE2B600DA3477 /* InventoryAddItemForm.swift in Sources */,
 				502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

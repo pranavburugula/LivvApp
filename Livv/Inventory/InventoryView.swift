@@ -8,55 +8,22 @@
 import SwiftUI
 
 struct InventoryView: View {
-    @State var inventory: [InventorySpace]
+    @State var inventory: [InventoryLocation]
     @State var refresh: Bool = false
     var body: some View {
         NavigationStack {
             VStack {
-                List {
-                    ForEach(inventory) { inventorySpace in
-                        Section(inventorySpace.name) {
-                            ForEach(inventorySpace.items) { inventoryItem in
-                                HStack {
-                                    Text(inventoryItem.name)
-                                    Spacer()
-                                    Menu {
-                                        Button {
-                                            inventoryItem.setStatus(newStatus: .STOCKED)
-                                            refresh.toggle()
-                                        } label: {
-                                            Image(systemName: "checkmark.circle.fill")
-                                        }
-                                        
-                                        Button {
-                                            inventoryItem.setStatus(newStatus: .LOW)
-                                            refresh.toggle()
-                                        } label: {
-                                            Image(systemName: "exclamationmark.circle.fill").foregroundColor(.orange)
-                                        }
-                                        
-                                        Button {
-                                            inventoryItem.setStatus(newStatus: .OUT)
-                                            refresh.toggle()
-                                        } label: {
-                                            Image(systemName: "x.circle.fill").foregroundColor(.red)
-                                        }
-                                    } label: {
-                                        switch (inventoryItem.status) {
-                                        case .STOCKED:
-                                            Image(systemName: "checkmark.circle").foregroundColor(.black)
-                                        case .LOW:
-                                            
-                                            Image(systemName: "exclamationmark.circle.fill").foregroundColor(.orange)
-                                        case .OUT:
-                                            Image(systemName: "x.circle.fill").foregroundColor(.red)
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                InventoryListView(inventory: inventory)
+                .toolbar {
+                    Menu {
+                        NavigationLink("Add item", destination: InventoryAddItemForm(newItemLocation: inventory[0].name, curGroups: inventory))
+                        
+                        NavigationLink("Add location group", destination: InventoryAddLocationForm())
+                    } label: {
+                        Image(systemName: "plus")
                     }
-                }.navigationTitle("Inventory")
+                }
+                .navigationTitle("Inventory")
             }
         }
     }
@@ -64,6 +31,10 @@ struct InventoryView: View {
 
 struct InventoryView_Previews: PreviewProvider {
     static var previews: some View {
-        InventoryView(inventory: InventorySpace.samples)
+        InventoryView(inventory: InventoryLocation.samples)
     }
+}
+
+enum InventoryAddDest {
+case ITEM, SPACE
 }
