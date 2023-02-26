@@ -15,6 +15,10 @@
 		500175E929AB812A005DB169 /* InventoryAddLocationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500175E829AB812A005DB169 /* InventoryAddLocationForm.swift */; };
 		500175EB29AB813F005DB169 /* InventoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500175EA29AB813F005DB169 /* InventoryListView.swift */; };
 		500175ED29AB8158005DB169 /* InventoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500175EC29AB8158005DB169 /* InventoryModel.swift */; };
+		500175EF29AB8604005DB169 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500175EE29AB8604005DB169 /* Network.swift */; };
+		500175F229AB8821005DB169 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500175F129AB8821005DB169 /* LoginView.swift */; };
+		500175F429AB8A86005DB169 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500175F329AB8A86005DB169 /* ProfileModel.swift */; };
+		500175F729AB8BC0005DB169 /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 500175F629AB8BC0005DB169 /* OAuthSwift */; };
 		502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387729AA7B6800B14C5B /* LivvApp.swift */; };
 		502D387A29AA7B6800B14C5B /* ContentView_example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387929AA7B6800B14C5B /* ContentView_example.swift */; };
 		502D387C29AA7B6900B14C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502D387B29AA7B6900B14C5B /* Assets.xcassets */; };
@@ -58,6 +62,10 @@
 		500175E829AB812A005DB169 /* InventoryAddLocationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryAddLocationForm.swift; sourceTree = "<group>"; };
 		500175EA29AB813F005DB169 /* InventoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListView.swift; sourceTree = "<group>"; };
 		500175EC29AB8158005DB169 /* InventoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryModel.swift; sourceTree = "<group>"; };
+		500175EE29AB8604005DB169 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		500175F129AB8821005DB169 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		500175F329AB8A86005DB169 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		500175F829AB8F30005DB169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		502D387429AA7B6800B14C5B /* Livv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		502D387729AA7B6800B14C5B /* LivvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvApp.swift; sourceTree = "<group>"; };
 		502D387929AA7B6800B14C5B /* ContentView_example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_example.swift; sourceTree = "<group>"; };
@@ -83,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500175F729AB8BC0005DB169 /* OAuthSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +144,14 @@
 			path = Inventory;
 			sourceTree = "<group>";
 		};
+		500175F029AB8631005DB169 /* NetworkDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				500175F329AB8A86005DB169 /* ProfileModel.swift */,
+			);
+			path = NetworkDataModels;
+			sourceTree = "<group>";
+		};
 		502D386B29AA7B6800B14C5B = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +175,7 @@
 		502D387629AA7B6800B14C5B /* Livv */ = {
 			isa = PBXGroup;
 			children = (
+				500175F829AB8F30005DB169 /* Info.plist */,
 				500175E529AB80CF005DB169 /* Inventory */,
 				502D387729AA7B6800B14C5B /* LivvApp.swift */,
 				502D38A629AA804500B14C5B /* ContentView.swift */,
@@ -170,6 +188,9 @@
 				502D38B029AA852A00B14C5B /* CalendarView.swift */,
 				2C0704D029AB641800BDE7F0 /* Expenses */,
 				2C0704C829AA890900BDE7F0 /* Chores */,
+				500175EE29AB8604005DB169 /* Network.swift */,
+				500175F029AB8631005DB169 /* NetworkDataModels */,
+				500175F129AB8821005DB169 /* LoginView.swift */,
 			);
 			path = Livv;
 			sourceTree = "<group>";
@@ -215,6 +236,9 @@
 			dependencies = (
 			);
 			name = Livv;
+			packageProductDependencies = (
+				500175F629AB8BC0005DB169 /* OAuthSwift */,
+			);
 			productName = Livv;
 			productReference = 502D387429AA7B6800B14C5B /* Livv.app */;
 			productType = "com.apple.product-type.application";
@@ -287,6 +311,9 @@
 				Base,
 			);
 			mainGroup = 502D386B29AA7B6800B14C5B;
+			packageReferences = (
+				500175F529AB8BC0005DB169 /* XCRemoteSwiftPackageReference "OAuthSwift" */,
+			);
 			productRefGroup = 502D387529AA7B6800B14C5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,11 +368,14 @@
 				502D38AB29AA81A800B14C5B /* HomeView.swift in Sources */,
 				2C0704CE29AABB9000BDE7F0 /* ChoreItemEditView.swift in Sources */,
 				502D38B129AA852A00B14C5B /* CalendarView.swift in Sources */,
+				500175EF29AB8604005DB169 /* Network.swift in Sources */,
 				500175E729AB8116005DB169 /* InventoryAddItemForm.swift in Sources */,
 				502D38AD29AA846500B14C5B /* InventoryView.swift in Sources */,
+				500175F429AB8A86005DB169 /* ProfileModel.swift in Sources */,
 				502D388429AA7B6900B14C5B /* Livv.xcdatamodeld in Sources */,
 				500175E929AB812A005DB169 /* InventoryAddLocationForm.swift in Sources */,
 				2C0704D429AB6B4A00BDE7F0 /* ExpenseItemEditView.swift in Sources */,
+				500175F229AB8821005DB169 /* LoginView.swift in Sources */,
 				502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +538,7 @@
 				DEVELOPMENT_TEAM = 45BCCW4W5T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Livv/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -537,6 +568,7 @@
 				DEVELOPMENT_TEAM = 45BCCW4W5T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Livv/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -667,6 +699,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		500175F529AB8BC0005DB169 /* XCRemoteSwiftPackageReference "OAuthSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OAuthSwift/OAuthSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		500175F629AB8BC0005DB169 /* OAuthSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 500175F529AB8BC0005DB169 /* XCRemoteSwiftPackageReference "OAuthSwift" */;
+			productName = OAuthSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		502D388229AA7B6900B14C5B /* Livv.xcdatamodeld */ = {
