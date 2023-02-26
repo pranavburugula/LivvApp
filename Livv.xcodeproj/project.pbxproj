@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501232B629AAC6FE00DA3477 /* InventoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501232B529AAC6FE00DA3477 /* InventoryModel.swift */; };
 		502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387729AA7B6800B14C5B /* LivvApp.swift */; };
 		502D387A29AA7B6800B14C5B /* ContentView_example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387929AA7B6800B14C5B /* ContentView_example.swift */; };
 		502D387C29AA7B6900B14C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502D387B29AA7B6900B14C5B /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		501232B529AAC6FE00DA3477 /* InventoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryModel.swift; sourceTree = "<group>"; };
 		502D387429AA7B6800B14C5B /* Livv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		502D387729AA7B6800B14C5B /* LivvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvApp.swift; sourceTree = "<group>"; };
 		502D387929AA7B6800B14C5B /* ContentView_example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_example.swift; sourceTree = "<group>"; };
@@ -87,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		501232B429AAC6E000DA3477 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				502D38AC29AA846500B14C5B /* InventoryView.swift */,
+				501232B529AAC6FE00DA3477 /* InventoryModel.swift */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
 		502D386B29AA7B6800B14C5B = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +121,7 @@
 		502D387629AA7B6800B14C5B /* Livv */ = {
 			isa = PBXGroup;
 			children = (
+				501232B429AAC6E000DA3477 /* Inventory */,
 				502D387729AA7B6800B14C5B /* LivvApp.swift */,
 				502D38A629AA804500B14C5B /* ContentView.swift */,
 				502D387B29AA7B6900B14C5B /* Assets.xcassets */,
@@ -118,7 +130,6 @@
 				502D387D29AA7B6900B14C5B /* Preview Content */,
 				502D38AA29AA81A800B14C5B /* HomeView.swift */,
 				502D387929AA7B6800B14C5B /* ContentView_example.swift */,
-				502D38AC29AA846500B14C5B /* InventoryView.swift */,
 				502D38AE29AA851900B14C5B /* ExpensesView.swift */,
 				502D38B029AA852A00B14C5B /* CalendarView.swift */,
 				502D38B229AA853300B14C5B /* ChoreView.swift */,
@@ -288,6 +299,7 @@
 				502D38AF29AA851900B14C5B /* ExpensesView.swift in Sources */,
 				502D38AB29AA81A800B14C5B /* HomeView.swift in Sources */,
 				502D38B129AA852A00B14C5B /* CalendarView.swift in Sources */,
+				501232B629AAC6FE00DA3477 /* InventoryModel.swift in Sources */,
 				502D38AD29AA846500B14C5B /* InventoryView.swift in Sources */,
 				502D388429AA7B6900B14C5B /* Livv.xcdatamodeld in Sources */,
 				502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */,
