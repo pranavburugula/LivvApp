@@ -14,7 +14,7 @@ struct ContentView: View {
                 .tabItem{
                     Image(systemName: "calendar")
                 }
-            InventoryView(inventory: InventoryLocation.samples)
+            InventoryView(inventory: InventoryItem.allSamples, locations: InventoryLocation.samples)
                 .tabItem{
                     Image(systemName: "refrigerator")
                 }
