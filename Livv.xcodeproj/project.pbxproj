@@ -15,6 +15,8 @@
 		500175E929AB812A005DB169 /* InventoryAddLocationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500175E829AB812A005DB169 /* InventoryAddLocationForm.swift */; };
 		500175EB29AB813F005DB169 /* InventoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500175EA29AB813F005DB169 /* InventoryListView.swift */; };
 		500175ED29AB8158005DB169 /* InventoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500175EC29AB8158005DB169 /* InventoryModel.swift */; };
+		500175FA29ABA80F005DB169 /* ChoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500175F929ABA80F005DB169 /* ChoreUtils.swift */; };
+		500175FC29ABAB7E005DB169 /* ExpenseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500175FB29ABAB7E005DB169 /* ExpenseUtils.swift */; };
 		502D387829AA7B6800B14C5B /* LivvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387729AA7B6800B14C5B /* LivvApp.swift */; };
 		502D387A29AA7B6800B14C5B /* ContentView_example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D387929AA7B6800B14C5B /* ContentView_example.swift */; };
 		502D387C29AA7B6900B14C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502D387B29AA7B6900B14C5B /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		500175E829AB812A005DB169 /* InventoryAddLocationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryAddLocationForm.swift; sourceTree = "<group>"; };
 		500175EA29AB813F005DB169 /* InventoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListView.swift; sourceTree = "<group>"; };
 		500175EC29AB8158005DB169 /* InventoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryModel.swift; sourceTree = "<group>"; };
+		500175F929ABA80F005DB169 /* ChoreUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreUtils.swift; sourceTree = "<group>"; };
+		500175FB29ABAB7E005DB169 /* ExpenseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseUtils.swift; sourceTree = "<group>"; };
 		502D387429AA7B6800B14C5B /* Livv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		502D387729AA7B6800B14C5B /* LivvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivvApp.swift; sourceTree = "<group>"; };
 		502D387929AA7B6800B14C5B /* ContentView_example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_example.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				502D38B229AA853300B14C5B /* ChoresView.swift */,
 				2C0704C929AA8B9A00BDE7F0 /* ChoreItemView.swift */,
 				2C0704CD29AABB9000BDE7F0 /* ChoreItemEditView.swift */,
+				500175F929ABA80F005DB169 /* ChoreUtils.swift */,
 			);
 			path = Chores;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 				502D38AE29AA851900B14C5B /* ExpensesView.swift */,
 				2C0704D129AB644900BDE7F0 /* ExpenseItemView.swift */,
 				2C0704D329AB6B4A00BDE7F0 /* ExpenseItemEditView.swift */,
+				500175FB29ABAB7E005DB169 /* ExpenseUtils.swift */,
 			);
 			path = Expenses;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 			files = (
 				502D38B329AA853300B14C5B /* ChoresView.swift in Sources */,
 				2C0704CA29AA8B9A00BDE7F0 /* ChoreItemView.swift in Sources */,
+				500175FC29ABAB7E005DB169 /* ExpenseUtils.swift in Sources */,
 				500175ED29AB8158005DB169 /* InventoryModel.swift in Sources */,
 				500175EB29AB813F005DB169 /* InventoryListView.swift in Sources */,
 				502D388129AA7B6900B14C5B /* Persistence.swift in Sources */,
@@ -338,6 +345,7 @@
 				502D387A29AA7B6800B14C5B /* ContentView_example.swift in Sources */,
 				2C0704D229AB644900BDE7F0 /* ExpenseItemView.swift in Sources */,
 				502D38AF29AA851900B14C5B /* ExpensesView.swift in Sources */,
+				500175FA29ABA80F005DB169 /* ChoreUtils.swift in Sources */,
 				502D38AB29AA81A800B14C5B /* HomeView.swift in Sources */,
 				2C0704CE29AABB9000BDE7F0 /* ChoreItemEditView.swift in Sources */,
 				502D38B129AA852A00B14C5B /* CalendarView.swift in Sources */,

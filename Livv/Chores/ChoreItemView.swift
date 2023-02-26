@@ -11,20 +11,23 @@ struct ChoreItemView: View {
     var choreItem: ChoreItem
     
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text(choreItem.name)
-                
-                Spacer()
-                
-                Text(choreItem.assignee)
-            }
-            
-            Text(choreItem.description)
-            
-            Text("Due " + choreItem.deadline.formatted(
-                date: .numeric,
-                time: .omitted))
+        HStack() {
+                    VStack(alignment: .leading) {
+                        Text(choreItem.name)
+                        Text(choreItem.description)
+
+                        Text("Due " + choreItem.deadline.formatted(
+                            date: .numeric,
+                            time: .omitted))
+
+                    }
+
+                    Spacer()
+
+                    VStack {
+                        Image(systemName: "person.circle.fill")
+                        Text(choreItem.assignee)
+                    }
         }
         .padding()
     }
