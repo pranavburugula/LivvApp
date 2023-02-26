@@ -10,17 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            CalendarView()
+            HomeView()
                 .tabItem{
-                    Image(systemName: "calendar")
+                    Image(systemName: "house")
                 }
             InventoryView(inventory: InventoryItem.allSamples, locations: InventoryLocation.samples)
                 .tabItem{
                     Image(systemName: "refrigerator")
-                }
-            HomeView()
-                .tabItem{
-                    Image(systemName: "house")
                 }
             ChoresView()
                 .tabItem{
@@ -38,8 +34,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
-
-enum Pages {
-    case HOME, INVENTORY
 }
