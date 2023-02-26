@@ -13,6 +13,8 @@ struct InventoryAddItemForm: View {
     @State var newItemLocation: String
     let curGroups: [InventoryLocation]
     
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         VStack(alignment: .leading) {
             Form {
@@ -60,11 +62,11 @@ struct InventoryAddItemForm: View {
                 
                 Section {
                     Button("Add item") {
-                        
+                        dismiss()
                     }.foregroundColor(.green)
                     
                     Button("Cancel") {
-                        
+                        dismiss()
                     }.foregroundColor(.red)
                 }
                 

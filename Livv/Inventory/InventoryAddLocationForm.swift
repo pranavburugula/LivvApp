@@ -9,6 +9,7 @@ import SwiftUI
 
 struct InventoryAddLocationForm: View {
     @State var newLocationName: String = ""
+    @Environment(\.dismiss) private var dismiss
     var body: some View {
         Form {
             Section("Location details") {
@@ -17,11 +18,11 @@ struct InventoryAddLocationForm: View {
             
             Section {
                 Button("Create Location") {
-                    
+                    dismiss()
                 }.foregroundColor(.green)
                 
                 Button("Cancel") {
-                    
+                    dismiss()
                 }.foregroundColor(.red)
             }
         }.navigationTitle("Add Location")
