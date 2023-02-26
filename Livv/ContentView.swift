@@ -22,7 +22,7 @@ struct ContentView: View {
                 .tabItem{
                     Image(systemName: "house")
                 }
-            ChoreView()
+            ChoresView()
                 .tabItem{
                     Image(systemName: "checklist")
                 }
@@ -30,7 +30,6 @@ struct ContentView: View {
                 .tabItem{
                     Image(systemName: "dollarsign")
                 }
-            
         }
     }
 }
